@@ -4,7 +4,8 @@ import './AccordianCard.css';
 function AccordianCard() {
   return (
     <div>
-      <h2>FAQs HERE!</h2>
+      <h1>FAQs</h1>
+      <h2>What is Frontend Mentor, and how will it help me?</h2>
     </div>
   );
 }
