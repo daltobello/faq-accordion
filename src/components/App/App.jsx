@@ -1,10 +1,16 @@
 import { useState } from 'react';
+import AccordianCard from '../AccordianCard/AccordianCard';
 import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <h1>Hello World</h1>;
+  return (
+    <div>
+      <h1>Hello World</h1>
+      <AccordianCard />
+    </div>
+  );
 }
 
 export default App;
