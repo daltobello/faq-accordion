@@ -6,12 +6,10 @@ import './App.css';
 function App() {
 const [accordionFacts, setAccordionFacts] = useState(accordionData)
 
-  // const { title, content } = accordionData;
-
   return (
     <div>
       <h1>Hello World</h1>
-      <AccordionCard />
+      <AccordionCard accordionFacts={accordionFacts}/>
     </div>
   );
 }
