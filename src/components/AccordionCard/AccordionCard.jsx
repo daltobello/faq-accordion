@@ -1,7 +1,7 @@
 import React from 'react';
-import './AccordianCard.css';
+import './AccordionCard.css';
 
-function AccordianCard() {
+function AccordionCard() {
   return (
     <div>
       <h1>FAQs</h1>
@@ -10,4 +10,4 @@ function AccordianCard() {
   );
 }
 
-export default AccordianCard;
+export default AccordionCard;
