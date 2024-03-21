@@ -6,14 +6,12 @@ function AccordionCard({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="accordion-facts">
-      <section onClick={() => setIsOpen(!isOpen)}>
-        <h3 className="accordion-title">{title}</h3>
+    <div className="accordion-item">
+      <div className="accordion-title" onClick={() => setIsOpen(!isOpen)}>
+        <div>{title}</div>
         <div>{isOpen ? '-' : '+'}</div>
-      </section>
-      <article>
-        {isOpen && <p className="accordion-content">{content}</p>}
-      </article>
+      </div>
+      {isOpen && <p className="accordion-content">{content}</p>}
     </div>
   );
 }
