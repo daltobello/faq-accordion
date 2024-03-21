@@ -4,12 +4,15 @@ import AccordionCard from '../AccordionCard/AccordionCard';
 import './App.css';
 
 function App() {
-const [accordionFacts, setAccordionFacts] = useState(accordionData)
+  const [accordionFacts, setAccordionFacts] = useState(accordionData);
 
   return (
     <div>
-      <h1>Hello World</h1>
-      <AccordionCard accordionFacts={accordionFacts}/>
+      <div>
+        {accordionFacts.map(({ title, content }) => (
+          <AccordionCard title={title} content={content} />
+        ))}
+      </div>
     </div>
   );
 }

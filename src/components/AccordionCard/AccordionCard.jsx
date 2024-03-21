@@ -1,25 +1,17 @@
 import React from 'react';
+import { useState } from 'react';
 import './AccordionCard.css';
 
-function AccordionCard({accordionFacts}) {
-  const accordionInfo = accordionFacts.map((fact) => {
-    return (
-      <div className='accordion-facts'>
-      <section>
-        <h3 className='accordion-title'>{fact.title}</h3>
-      </section>
-      <article>
-        <p className='accordion-content'>{fact.content}</p>
-      </article>
-      </div>
-    )
-  })
+function AccordionCard({ title, content }) {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='accordion-card-container'>
-      <h1>FAQs</h1>
-      <h2>What is Frontend Mentor, and how will it help me?</h2>
-      {accordionInfo}
+    <div className="accordion-item">
+      <div className="accordion-title" onClick={() => setIsOpen(!isOpen)}>
+        <div>{title}</div>
+        <div>{isOpen ? '-' : '+'}</div>
+      </div>
+      {isOpen && <p className="accordion-content">{content}</p>}
     </div>
   );
 }
