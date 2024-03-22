@@ -1,8 +1,9 @@
 .app {
   background-image: url('/src/assets/images/background-pattern-desktop.svg');
-  background-size: 100% 250px;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center top;
+  max-height: 250px;
+  background-size: cover;
 }
 
 .accordion-wrapper {
@@ -16,8 +17,7 @@
 .accordion {
   margin-top: 2em;
   padding: 1em;
-  /* border: 1px solid #ccc; */
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #f9f9f9;
 }
 
