@@ -15,7 +15,12 @@ function AccordionCard({ title, content }) {
     <div className='accordion-item'>
       <div className="accordion-title-wrapper" onClick={() => setIsOpen(!isOpen)}>
         <h3 className='title'>{title}</h3>
-        <div>{isOpen ? '-' : '+'}</div>
+        <div>{isOpen ? (
+          <img src="src/assets/images/icon-minus.svg" alt="plus icon" />
+        ) : (
+          <img src='src/assets/images/icon-plus.svg' alt='minus icon'/>
+        )
+      }</div>
       </div>
       <div className="accordion-content" ref={contentRef}>
         <p>{content}</p>
