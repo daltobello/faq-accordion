@@ -20,6 +20,7 @@
 
 .title {
   margin: 0;
+  font-family: var(--heading-secondary);
 }
 
 .accordion-content {
@@ -27,5 +28,7 @@
   overflow: hidden;
   transition: max-height 0.4s ease;
   max-height: 0; /* Initially collapsed */
+  font-family: var(--body);
+  color: gray
 }
 
