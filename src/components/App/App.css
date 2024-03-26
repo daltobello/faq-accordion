@@ -33,3 +33,9 @@
   margin-left: 1.1rem;
   font-family: var(--heading-primary);
 }
+
+@media (max-width: 950px) {
+  .accordion {
+    width: 80%;
+  }
+}

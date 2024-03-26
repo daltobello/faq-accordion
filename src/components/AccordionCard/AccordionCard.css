@@ -29,6 +29,12 @@
   transition: max-height 0.4s ease;
   max-height: 0; /* Initially collapsed */
   font-family: var(--body);
-  color: gray
+  color: gray;
 }
 
+@media (max-width: 950px) {
+  .accordion-item {
+    width: 90%;
+    margin: 0;
+  }
+}
