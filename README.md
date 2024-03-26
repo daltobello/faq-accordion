@@ -1,12 +1,12 @@
 # Frontend Mentor - FAQ accordion
 
-### Users stories: 
+### User stories
 ```- Hide/Show the answer to a question when the question is clicked
 - Navigate the questions and hide/show answers using keyboard navigation alone
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 ```
-### Favorite Code Snip
+### Favorite Code Snippet
 The useEffect re-renders the content everytime the isOpen state changes when a user clicks on the plus and minus icons to expand and contract the accordion.
 ```
 useEffect(() => {
