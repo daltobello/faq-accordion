@@ -11,6 +11,9 @@
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 ```
+
+[Frontend Mentor Challenge Spec](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
+
 ### Favorite Code Snippet
 The useEffect re-renders the content everytime the isOpen state changes when a user clicks on the plus and minus icons to expand and contract the accordion.
 ```
@@ -30,8 +33,6 @@ useEffect(() => {
 </br>
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-
-[Link to this challenge](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
 
 ### Web View
 <img width="1382" alt="Screenshot 2024-03-26 at 12 19 53 PM" src="https://github.com/daltobello/faq-accordion/assets/130494366/64083400-399b-4662-be34-eb6e1691ffc2">
