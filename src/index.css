@@ -1,7 +1,28 @@
+@font-face {
+  font-family: "WorkSans-VariableFont-Bold";
+  src: url('src/assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "WorkSans-VariableFont-SemiBold";
+  src: url('src/assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-VariableFont-Regular";
+  src: url('src/assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+--heading-primary: "WorkSans-VariableFont-Bold", sans-serif;
+--heading-secondary: "WorkSans-VariableFont-SemiBold";
+--body: "WorkSans-VariableFont-Regular";
+
   line-height: 1.5;
-  font-weight: 400;
   margin: 0 auto;
   background-color: #f9eeff;
 
