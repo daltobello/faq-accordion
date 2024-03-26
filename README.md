@@ -1,4 +1,9 @@
 # Frontend Mentor - FAQ accordion
+<div align="center">  
+    
+### [Deployed Link](https://daltobello.github.io/faq-accordion/)
+
+</div>
 
 ### User stories
 ```- Hide/Show the answer to a question when the question is clicked
