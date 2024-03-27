@@ -16,7 +16,7 @@
 [Frontend Mentor Challenge Spec](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
 
 ### Favorite Code Snippet
-The useEffect re-renders the content everytime the isOpen state changes when a user clicks on the plus and minus icons to expand and contract the accordion.
+The useEffect re-renders the content everytime the isOpen state changes. When isOpen is true, the maxHeight of the div on which contentRef variable is attached to is set to the scroll height of the content, otherwise, the maxHeight is 0px (when the accordion is collapsed).
 ```
 useEffect(() => {
     if(contentRef.current) {
