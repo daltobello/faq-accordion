@@ -4,7 +4,7 @@ import AccordionCard from "../AccordionCard/AccordionCard";
 import "./app.css";
 
 function App() {
-  const [accordionFacts, setAccordionFacts] = useState(accordionData);
+  const [accordionFacts] = useState(accordionData);
 
   return (
     <div className='app'>
