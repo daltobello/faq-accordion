@@ -3,11 +3,12 @@
   flex-direction: column;
   color: black;
   justify-content: space-between;
-  padding: 0.5em 1em;
+  margin: 0em 1em 0em 1em;
+  padding: 1em 0em 1em 0em;
   width: 30em;
-  margin-bottom: 1em;
   overflow: hidden;
   border-bottom: solid rgb(220, 220, 220) 1px;
+  box-sizing: border-box;
 }
 
 .accordion-title-wrapper {
@@ -27,14 +28,15 @@
   background-color: #f9f9f9;
   overflow: hidden;
   transition: max-height 0.4s ease;
-  max-height: 0; /* Initially collapsed */
+  max-height: 0;
   font-family: var(--body);
   color: gray;
 }
 
+
 @media (max-width: 950px) {
   .accordion-item {
-    width: 90%;
+    width: 100%;
     margin: 0;
   }
 }
