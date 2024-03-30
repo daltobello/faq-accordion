@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import './AccordionCard.css';
+import './accordionCard.css';
 
 function AccordionCard({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);

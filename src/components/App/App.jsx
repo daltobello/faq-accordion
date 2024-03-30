@@ -1,7 +1,7 @@
 import { useState } from "react";
 import accordionData from "../../AccordionData/AccordionData";
 import AccordionCard from "../AccordionCard/AccordionCard";
-import "./App.css";
+import "./app.css";
 
 function App() {
   const [accordionFacts, setAccordionFacts] = useState(accordionData);
