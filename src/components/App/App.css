@@ -16,14 +16,14 @@
 
 .accordion {
   margin-top: 2em;
-  padding: 1em;
+  padding: 2em 1em 2em 1em;
   border-radius: 10px;
   background-color: #f9f9f9;
 }
 
 .title-wrapper {
   display: flex;
-  padding-bottom: 1.1rem;
+  margin: 0 1.1em 0.5em;
 }
 
 .faqs-heading {
@@ -32,6 +32,7 @@
   text-align: left;
   margin-left: 1.1rem;
   font-family: var(--heading-primary);
+  font-size: 3.2em;
 }
 
 @media (max-width: 950px) {
