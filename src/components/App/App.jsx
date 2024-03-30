@@ -14,8 +14,8 @@ function App() {
             <img src='src/assets/images/icon-star.svg' alt='star icon' />
             <h1 className='faqs-heading'>FAQs</h1>
           </div>
-          {accordionFacts.map(({ title, content }) => (
-            <AccordionCard title={title} content={content} />
+          {accordionFacts.map(({ title, content, id }) => (
+            <AccordionCard key={id} title={title} content={content} />
           ))}
         </div>
       </div>
