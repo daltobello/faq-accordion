@@ -19,6 +19,8 @@
   padding: 2em 1em 2em 1em;
   border-radius: 10px;
   background-color: #f9f9f9;
+  max-height: auto; /* Adjust the max-height to control the height of the accordion */
+  overflow-y: auto; /* Add a vertical scroll bar when content exceeds the max-height */
 }
 
 .title-wrapper {

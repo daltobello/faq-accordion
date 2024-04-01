@@ -1,26 +1,30 @@
 import React, { useState, useRef, useEffect } from 'react';
-import './accordionCard.css';
+import './AccordionCard.css';
 
 function AccordionCard({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
-  const contentRef = useRef(null)
+  const contentRef = useRef(null);
 
   useEffect(() => {
-    if(contentRef.current) {
-      contentRef.current.style.maxHeight = isOpen ? `${contentRef.current.scrollHeight}px` : '0px';
+    if (contentRef.current) {
+      contentRef.current.style.maxHeight = isOpen
+        ? `${contentRef.current.scrollHeight}px`
+        : '0px';
     }
-  }, [isOpen])
+  }, [isOpen]);
 
   return (
-    <div className='accordion-item'>
-      <div className="accordion-title-wrapper" onClick={() => setIsOpen(!isOpen)}>
-        <h3 className='title'>{title}</h3>
+    <div className="accordion-item">
+      <div
+        className="accordion-title-wrapper"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <h3 className="title">{title}</h3>
         {isOpen ? (
           <img src="src/assets/images/icon-minus.svg" alt="minus icon" />
         ) : (
-          <img src='src/assets/images/icon-plus.svg' alt='plus icon'/>
-        )
-      }
+          <img src="src/assets/images/icon-plus.svg" alt="plus icon" />
+        )}
       </div>
       <div className="accordion-content" ref={contentRef}>
         <p>{content}</p>
