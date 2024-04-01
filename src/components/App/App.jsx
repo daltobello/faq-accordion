@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import AccordionCard from '../AccordionCard/AccordionCard';
-import accordionData from '../../AccordionData/AccordionData.jsx';
+import accordionData from '../../AccordionData/AccordionData';
 import './App.css';
 
 function App() {
