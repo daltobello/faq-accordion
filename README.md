@@ -2,7 +2,7 @@
 <div align="center">  
     
 # Frontend Mentor - FAQ accordion 
-### [Deployed Link](https://daltobello.github.io/faq-accordion/)
+
 
 </div>
 
